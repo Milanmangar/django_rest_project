@@ -4,4 +4,4 @@ python:
 
 before_script: ""
 
-script: pyhhon manage.py test && flake8
+script: python manage.py test && flake8
