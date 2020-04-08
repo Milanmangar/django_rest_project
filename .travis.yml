@@ -5,4 +5,5 @@ python:
 install: # => 5
       - pip install -r requirements.txt
 
+before_script: cd advance_api
 script: python manage.py test && flake8
