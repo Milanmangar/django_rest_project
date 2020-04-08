@@ -1,0 +1,22 @@
+repos:
+-   repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+    - id: black
+      language_version: python3.6
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    - id: flake8
+-   repo: https://github.com/miki725/importanize
+    rev: '0.7'
+    hooks:
+    - id: importanize
+    language_version: python3
+    args: [--verbose]
+-  repo: https://github.com/pre-commit/mirrors-pylint
+   rev: v2.4.2
+   hooks:
+  - id: pylint
+    language_version: python3
+    args: [--py3k]
